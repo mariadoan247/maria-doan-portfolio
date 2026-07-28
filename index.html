@@ -1,42 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Portfolio Website-Maria</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Doan | Software Engineer</title>
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <!-- linking css file -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Maria Doan</h1>
-        <p>Software Engineer | Full Stack Developer</p>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate software engineer with experience in full-stack development, DevOps, and system optimization. I enjoy solving complex problems and building scalable, secure applications.</p>
+    <!-- navbar -->
+    <!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
+    <!-- Add class of bg-light to nav element -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Maria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- main banner -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/containers/ -->
+    <!-- https://getbootstrap.com/docs/5.2/layout/grid/ -->
+    <section class="container-fluid section bgimage" id="home">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
+                <h2 class="hero_title">Maria Doan</h2>
+                <p class="hero_desc">Software Engineer | Full Stack Developer</p>
+            </div>
+        </div>
     </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://www.devpost.com/software/padawan-academy">Padawan Academy</a>
-              - Developed an app with SwiftUI, MongoDB, and GPT-3 for an educational chat bot.
-              - Awarded Hacklahoma 2023 Best Theme and Best Use of MongoDB, recognizing innovative use of technology.
-            </li>
-        </ul>
+
+    <!-- about section -->
+    <section class="container mt-4 pt-4 section" id="about">
+        <h1 class="text-center">About Me</h1>
+        
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <img src="documents/aboutImage.png" class="image_about" alt="">
+            </div>
+
+            <div class="col-lg-6">
+                <p> Hi, I'm Maria! I've been working as a Software Engineer since 2023. My experience is broad, but it mostly revolves around full-stack development, DevOps, and system optimization. While Software Engineering is my official job title, I will always be a student. I never want to stop learning and always strive to grow my skill sets. Whether those be technical, soft, or creative skills.
+                </p>
+                <div class="row mt-3">
+                    <p> Currently, I work as a Dev Ops Associate Engineer at AAA Auto Club Enterprises (ACE). I am heavily involved in ACE’s membership modernization effort to move from mainframe to the cloud. My position also involves a significant amount of cross-team collaboration, so I can help other teams with their initiatives. Additionally, I lead in the research of AI innovation tools for my team.
+                    </p>
+                </div>
+                <div class="row mt-3">
+                    <p>One of my biggest priorities in life is work life balance. So, I want to share a few of my hobbies with you!</p>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Rock Climbing</li>
+                            <li>Hiking</li>
+                            <li>Reading</li>
+                            <li>Creative Writing</li>
+                            <li>Video & Tabletop Games</li>
+                            <li>Arts & Crafts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mariadoan247@gmail.com">mariadoan247@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/mariadoan247" target="_blank">github.com/mariadoan247</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/mariadoan" target="_blank">linkedin.com/in/mariadoan</a></p>
-        <p><a href="maria-doan-resume-2026.pdf" target="_blank">Download My Resume</a></p>
+
+    <!-- experience section-->
+    <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
+    <section class="container section" id="experience">
+        <h1 class="text-center">Experience</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card experienceText">
+                    <div class="card-body">
+                        <i class="fas experienceIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">DevOps Associate Engineer</h4>
+                        <p class="card-text mt-3">
+                            <p>AAA Auto Club Enterprises</p>
+                            <p>06/2025 - Present</p>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card experienceText">
+                    <div class="card-body">
+                        <i class='fas experienceIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Software Developer III</h4>
+                        <p class="card-text mt-3">
+                            <p>Paycom</p>
+                            <p>12/2024 - 06/2025</p>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card experienceText">
+                    <div class="card-body">
+                        <i class='far experienceIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Software Engineer II</h4>
+                        <p class="card-text mt-3">
+                            <p>Walmart Global Tech</p>
+                            <p>02/2024 - 08/2024</p>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card experienceText">
+                    <div class="card-body">
+                        <i class='fas experienceIcon fa-search'></i>
+                        <h4 class="card-title mt-3">Software Development Team Lead</h4>
+                        <p class="card-text mt-3">
+                            <p>The Ronnie K. Irani Center for the Creation of Economic Wealth (I-CCEW)</p>
+                            <p>08/2023 - 12/2023</p>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card experienceText">
+                    <div class="card-body">
+                        <i class='fas experienceIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">Software Engineer II (Internship)</h4>
+                        <p class="card-text mt-3">
+                            <p>Walmart Global Tech</p>
+                            <p>05/2023 - 08/2023</p>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card experienceText">
+                    <div class="card-body">
+                        <i class='fas experienceIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">Undergraduate Research Assistant</h4>
+                        <p class="card-text mt-3">
+                            <p>University of Oklahoma</p>
+                            <p>08/2022 - 12/2023</p>
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2026 Maria Doan</p>
-    </footer>
+
+    <!-- portfolio section-->
+    <section class="section" id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="documents/padawanImage.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Padawan Academy</h4>
+                            <p class="card-text">Developed an app with SwiftUI, MongoDB, and GPT-3 for an educational chat bot. Awarded Hacklahoma 2023 Best Theme and Best Use of MongoDB, recognizing innovative use of technology.</p>
+                            <div class="text-center">
+                                <a href="https://www.devpost.com/software/padawan-academy" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="documents/resumeImage.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Resume</h4>
+                            <p class="card-text">You can download my updated resume! Just click the button below.</p>
+                            <div class="text-center">
+                                <a href="documents/maria-doan-resume-2026.pdf" class="btn btn-success">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- contact section-->
+    <!-- https://getbootstrap.com/docs/5.2/forms/overview -->
+    <section class="container mt-3 section" id="contact">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Email: </h4>
+                            <p class="text-center"> mariadoan247@gmail.com </p>
+                            <div class="text-center">
+                                <a href="mailto:mariadoan247@gmail.com" class="btn btn-success">Send Email</a>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">LinkedIn: </h4>
+                            <p class="text-center"> https://linkedin.com/in/mariadoan </p>
+                            <div class="text-center">
+                                <a href="https://linkedin.com/in/mariadoan" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">GitHub: </h4>
+                            <p class="text-center"> https://github.com/mariadoan247 </p>
+                            <div class="text-center">
+                                <a href="https://github.com/mariadoan247" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
 </body>
 </html>
